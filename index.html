@@ -4,9 +4,144 @@
     <meta charset="utf-8">
     <title>HTML Academy: Нёрдс</title>
   </head>
-  <body>
-
-    <p>Репозиторий создан для обучения на интенсивном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/htmlcss">Базовый HTML и CSS</a>».</p>
+    <body>
+    <header class="main-header">
+    <nav class="main-navigation" >
+      <a class="main-header-logo" href="index.html">
+      <img src="img/logo.svg" width="100" height="25" alt="логотип сайта нердс">
+          </a>
+      <ul class="site-navigation">
+          <li><a href="studio.html">Студия</a></li>
+          <li><a href="customers.html">Клиенты</a></li>
+          <li><a href="catalog.html">Магазин</a></li>
+          <li><a href="contacts.html">Контакты</a></li>     
+        </ul>
+        <!--не уверен насчет корректности постевленного ниже класса-->
+      <ul class="user-navigation">
+          <li><a href="basket.html">Корзина</a></li>
+          </ul>
+        <ul>
+            <li><p><b>Долго,дорого,скурпулезно.</b></p>
+                <p>Математически  выверенный дизайн для вашего сайта или моильного приложения</p>
+                <p><a class="botton" href="#">Узнать больше</a>
+                </p>
+            </li>
+        </ul>
+        </nav>
+    </header>
+    <main class="container">
+        <h1 class="visually-hidden">Веб-студия Nerds</h1>
+        <section class="catalog">
+        <h2 class="visually-hidden">Cписок услуг</h2>
+            <ul class="catalog-list">
+                  <li class="catalog-item">
+                      <a href="catalog-items.html">
+                      <h3>Веб-сайты</h3>
+                          </a>
+                      <p>Мир никогда не станет прежним после того как увидит ваш сайт!</p>
+                      <p>
+                        <img src="img/product-1.jpg" width="220" height="165" alt="Веб-сайты">
+                      </p>
+                      <p class="cite-items">
+                          <a class="button" href="#">Заказать</a>
+                       </p>
+                </li>
+                <li class="catalog-item">
+                      <a href="catalog-items.html">
+                      <h3>Приложения</h3>
+                          </a>
+                      <p>Покорите топ-10 приложений в AppStore и GooglePlay</p>
+                      <p>
+                        <img src="img/product-1.jpg" width="220" height="165" alt="Приложения">
+                      </p>
+                      <p class="cite-items">
+                          <a class="button" href="#">Заказать</a>
+                       </p>
+                </li>
+                <li class="catalog-item">
+                      <a href="catalog-items.html">
+                      <h3>Презентации</h3>
+                          </a>
+                      <p>Вы даже не подозреваете, на сколько выизумительны!</p>
+                      <p>
+                        <img src="img/product-1.jpg" width="220" height="165" alt="Презентации">
+                      </p>
+                      <p class="cite-items">
+                          <a class="button" href="#">Заказать</a>
+                       </p>
+                </li>
+            </ul>
+        </section>
+        <section class="about">
+            <p><b>Мы - маленькая, но гордая дизайн - студия из Краснодара.</b></p>
+            <p>Исповедуем принципы минимализма и частоты.Ставим математический расчет превыше креатива.Работаем не покладая рук как роботы.</p>
+            <h3>Выполняем заказы на разработку:</h3>
+            <ul class="about-item">
+                <li>Веб-сайтов любой сложности</li>
+                <li>Мобильных приложений для iOS и Android</li>
+                <li>Слайдшоу и видео для карпоративных презентаций</li>
+            </ul>
+            <img src="http://placehold.it/150x100">
+            <h3>C 2004 года любим точность во всем:</h3>
+            
+            <!--не знаю, нужна ли тут вообще таблица-->
+            <table class="about-table">
+                <tr>
+                    <th>146%</th>
+                    <th>100%</th>
+                    <th>50%</th>
+                </tr>
+                <tr>
+                    <td>Уровень самоотдачи</td>
+                    <td>Соблюдение сроков</td>
+                    <td>минимальная предоплата</td>
+                </tr>
+            </table>
+            
+        </section>
+        <section class="project">
+            <ul class="project-items">
+            <li><a href="project-items.html">
+                <img src="http://placehold.it/150x100" alt="html academy"> 
+                </a>
+                </li>
+                <li><a href="project-items.html">
+                <img src="http://placehold.it/150x100" alt="barbershop BORODINSKI"> 
+                </a>
+                </li>
+                <li><a href="project-items.html">
+                <img src="http://placehold.it/150x100" alt="PINK"> 
+                </a>
+                </li>
+                <li><a href="project-items.html">
+                <img src="http://placehold.it/150x100" alt="MISHKA"> 
+                </a>
+                </li>
+            </ul>
+        </section>
+        <section class="location">
+            <h3>NERDS DESIGN STUDIO</h3>
+            <p>191186,Санкт-петербург<br>
+               ул.Б.Конюшенная,д 19/8<br>
+                <br>
+               тел.+7(812)275-75-75
+            </p>
+            <p>
+                <a class="button" href="#">Напишите нам</a>
+            </p>
+        </section>
+        </main>
+        <footer class="main-footer">
+            <div class="footer-social">
+                <b>Давайте дружить, это выгодно!</b>
+                <p>Скидка 10% для друзей из социальных сетей</p>
+                <ul>
+                    <li><a class="social-button" href="#">Вконтакте</a></li>
+                    <li><a class="social-button" href="#">Фейсбук</a></li>
+                    <li><a class="social-button" href="#">Инстаграм</a></li>
+                </ul>
+            </div>
+        </footer>
 
   </body>
 </html>
