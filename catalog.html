@@ -13,10 +13,11 @@
       <ul class="site-navigation">
         <li><a href="studio.html">Студия</a></li>
         <li><a href="customers.html">Клиенты</a></li>
-        <li class="site-navigation-current"><a href="catalog.html">Магазин</a></li>
+        <li class="site-navigation-current"><a>Магазин</a></li>
         <li><a href="contacts.html">Контакты</a></li>
       </ul>
       <ul class="user-navigation">
+        <span><img src="img/cart-icon.svg" width="15" height="15" alt="иконка корзины"></span>
         <li><a href="basket.html">Корзина</a></li>
       </ul>
       <h1>Магазин готовых шаблонов</h1>
@@ -27,7 +28,70 @@
     <section class="filters">
       <h2 class="visually-hidden">Фильтр товаров</h2>
       <h3>Стоимость:</h3>
-      <!-- Здесь будет форма -->
+      <form class="filter" method="get" action="https//:echo.htmlacademy.ru">
+        <span class="visually-hidden">1</span>
+        <input type="range" name="cost" min="1" max="15000" step="1">
+        <span class="visually-hidden">15000</span>
+        <div class="one-third-width">
+          <label for="min-cost">ОТ</label>
+          <input type="number" min="0" max="14999" id="mmin-cost" name="min-cost" value="0">
+        </div>
+        <div class="one-third-width">
+          <label for="max-cost">ДО</label>
+          <input type="number" min="1" max="1500" id="max-cost" name="max-cost" value="15000">
+        </div>
+        <fieldset>
+          <legend>Сетка</legend>
+          <ul>
+            <li class="filter-option">
+              <input class="visually-hidden filter-input filter-input-radio"
+              type="radio" name="feature-group" value="adaptive" id="filter-adaptive" checked>
+              <label for="filter-adaptive">Адаптивная</label>
+            </li>
+            <li class="filter-option">
+              <input class="visually-hidden filter-input filter-input-radio"
+              type="radio" name="feature-group" value="fixed" id="filter-fixed">
+              <label for="filter-fixed">Фиксированная</label>
+            </li>
+            <li class="filter-option">
+              <input class="visually-hidden filter-input filter-input-radio"
+              type="radio" name="feature-group" value="rubber" id="filter-rubber">
+              <label for="filter-rubber">Резиновая</label>
+            </li>
+          </ul>
+        </fieldset>
+        <fieldset>
+          <legend>Особенности</legend>
+          <ul>
+            <li>
+              <input class="visually-hidden filter-input filter-input-radio"
+              type="checkbox" name="slider" id="filter-slider" checked>
+              <label for="filter-slider">Слайдер</label>
+            </li>
+            <li>
+              <input class="visually-hidden filter-input filter-input-radio"
+              type="checkbox" name="advantage block" id="filter-advantage-block">
+              <label for="filter-advantage-block">Блок преимуществ</label>
+            </li>
+            <li>
+              <input class="visually-hidden filter-input filter-input-radio"
+              type="checkbox" name="news" id="filter-news" checked>
+              <label for="filter-news">Новости</label>
+            </li>
+            <li>
+              <input class="visually-hidden filter-input filter-input-radio"
+              type="checkbox" name="gallery" id="filter-gallery">
+              <label for="filter-gallery">Галерея</label>
+            </li>
+            <li>
+              <input class="visually-hidden filter-input filter-input-radio"
+              type="checkbox" name="basket" id="filter-basket">
+              <label for="filter-basket">Корзина</label>
+            </li>
+          </ul>
+        </fieldset>
+        <button type="submit" class="filter-button button">Показать</button>
+      </form>
     </section>
     <section class="categories">
       <h3>Сортировать:</h3>
@@ -44,15 +108,14 @@
       </ul>
       <a class="button" href="categories-item.html">возрастание</a>
       <a class="button" href="categories-item.html">убывание</a>
-
     </section>
-
     <section class="catalog">
       <h2 class="visually-hidden">Список макетов сайтов</h2>
       <ul class="catalog-list">
         <li class="catalog-item catalog-item-current">
           <p class="catalog-item-image">
             <a href="catalog-item.html">
+              <img src="img/browser.svg" class="active" width="360" height="40" alt="строка браузера">
               <img src="img/img-sedona.png" width="360" height="576" alt="Сайт Sedona">
             </a>
           </p>
@@ -69,6 +132,7 @@
         <li>
           <p class="catalog-item-image">
             <a href="catalog-item.html">
+              <img src="img/browser.svg" class="rest" width="360" height="40" alt="строка браузера">
               <img src="img/img-pink.png" width="360" height="576" alt="Сайт Pink">
             </a>
           </p>
@@ -76,6 +140,7 @@
         <li>
           <p class="catalog-item-image">
             <a href="catalog-item.html">
+              <img src="img/browser.svg" class="rest" width="360" height="40" alt="строка браузера">
               <img src="img/img-barbershop.png" width="360" height="576" alt="barbershop BORODINSKI">
             </a>
           </p>
@@ -83,6 +148,7 @@
         <li>
           <p class="catalog-item-image">
             <a href="catalog-item.html">
+              <img src="img/browser.svg" class="rest" width="360" height="40" alt="строка браузера">
               <img src="img/img-mishka.png " width="360" height="576" alt="Сайт MISHKA">
             </a>
           </p>
@@ -90,6 +156,7 @@
         <li>
           <p class="catalog-item-image">
             <a href="catalog-item.html">
+              <img src="img/browser.svg" class="rest" width="360" height="40" alt="строка браузера">
               <img src="img/img-aplus.png" width="360" height="576" alt="не знаю, что за название сайта">
             </a>
           </p>
@@ -97,6 +164,7 @@
         <li>
           <p class="catalog-item-image">
             <a href="catalog-item.html">
+              <img src="img/browser.svg" class="rest" width="360" height="40" alt="строка браузера">
               <img src="img/img-kvast.png" width="360" height="576" alt="Сайт КВАСТ">
             </a>
           </p>
@@ -133,5 +201,29 @@
       </ul>
     </div>
   </footer>
+  <section class="popup write-us">
+    <form class="letter" method="post" action="https://........">
+      <fieldset>
+        <legend>Напишите нам</legend>
+        <p class="writer-info">
+          <label for="info name">Ваше имя</label>
+          <input id="info name" type="text" name="name" value=""
+          placeholder="Представьтесь,пожалуйста">
+        </p>
+        <p>
+          <label for="info name">Ваш e-mail</label>
+          <input id="info mail" type="text" name="mail" value=""
+          placeholder="Для отправки ответа">
+        </p>
+        <p>
+          <label for="info name">Текст письма</label>
+          <input id="info text" type="text" name="text" value=""
+          placeholder="В свободной форме">
+        </p>
+        <span class="modal-close">x</span>
+      </fieldset>
+      <button type="submit" class="info-button button">Отправить</button>
+    </form>
+  </section>
 
 </body>
