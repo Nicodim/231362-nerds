@@ -16,8 +16,8 @@
         <li><a href="catalog.html">Магазин</a></li>
         <li><a href="contacts.html">Контакты</a></li>
       </ul>
+      <a><img src="img/cart-icon.svg" width="15" height="15" alt="иконка корзины"></a>
       <ul class="user-navigation">
-        <span><img src="img/cart-icon.svg" width="15" height="15" alt="иконка корзины"></span>
         <li><a href="basket.html">Корзина</a></li>
       </ul>
     </nav>
@@ -43,15 +43,23 @@
     <div class="slide-header visually-hidden">
       <img src="img/slide3.png" width="698" height="413" alt="Третий красивый слайд на сайте НЕРДС">
     </div>
-    <a class="button active-button">
-      <img src="img/active-button.svg" width="8" height="8">
-    </a>
-    <a class="button rest-button" href="img/slide2.png">
-      <img src="img/active-button.svg" width="8" height="8">
-    </a>
-    <a class="button rest-button" href="img/slide3.png">
-      <img src="img/active-button.svg" width="8" height="8">
-    </a>
+    <ul>
+      <li>
+        <a class="button active-button">
+          <img src="img/active-button.svg" width="8" height="8" alt="активная кнопока к слайду">
+        </a>
+      </li>
+      <li>
+        <a class="button rest-button" href="img/slide2.png">
+          <img src="img/active-button.svg" width="8" height="8" alt="не активная кнопока к слайду">
+        </a>
+      </li>
+      <li>
+        <a class="button rest-button" href="img/slide3.png">
+          <img src="img/active-button.svg" width="8" height="8" alt="не активная кнопока к слайду">
+        </a>
+      </li>
+    </ul>
   </header>
   <main class="container">
     <h1 class="visually-hidden">Веб-студия Nerds</h1>
@@ -171,23 +179,24 @@
       </ul>
     </div>
   </footer>
-  <section class="popup write-us">
-    <form class="letter" method="post" action="https://........">
+  <section class="popup-write-us">
+    <h3 class="visually-hidden">Напишите нам отзыв</h3>
+    <form class="letter" method="post" action="https://echo.htmlacademy.ru">
       <fieldset>
         <legend>Напишите нам</legend>
         <p class="writer-info">
-          <label for="info name">Ваше имя</label>
-          <input id="info name" type="text" name="name" value=""
+          <label for="info-name">Ваше имя</label>
+          <input id="info-name" type="text" name="name"
           placeholder="Представьтесь,пожалуйста">
         </p>
         <p>
-          <label for="info name">Ваш e-mail</label>
-          <input id="info mail" type="text" name="mail" value=""
+          <label for="info-mail">Ваш e-mail</label>
+          <input id="info-mail" type="text" name="mail"
           placeholder="Для отправки ответа">
         </p>
         <p>
-          <label for="info name">Текст письма</label>
-          <input id="info text" type="text" name="text" value=""
+          <label for="info-text">Текст письма</label>
+          <input id="info-text" type="text" name="text"
           placeholder="В свободной форме">
         </p>
         <span class="modal-close">x</span>

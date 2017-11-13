@@ -16,8 +16,8 @@
         <li class="site-navigation-current"><a href="catalog.html">Магазин</a></li>
         <li><a href="contacts.html">Контакты</a></li>
       </ul>
+      <a><img src="img/cart-icon.svg" width="15" height="15" alt="иконка корзины"></a>
       <ul class="user-navigation">
-        <span><img src="img/cart-icon.svg" width="15" height="15" alt="иконка корзины"></span>
         <li><a href="basket.html">Корзина</a></li>
       </ul>
       <h1>Магазин готовых шаблонов</h1>
@@ -32,9 +32,9 @@
         <span class="visually-hidden">1</span>
         <input type="range" name="cost" min="1" max="15000" step="1">
         <span class="visually-hidden">15000</span>
-        <div class="one-third-width">
+        <div class="width-range">
           <label for="min-cost">ОТ</label>
-          <input type="number" min="0" max="14999" id="mmin-cost" name="min-cost" value="0">
+          <input type="number" min="0" max="14999" id="min-cost" name="min-cost" value="0">
         </div>
         <div class="one-third-width">
           <label for="max-cost">ДО</label>
@@ -201,24 +201,25 @@
       </ul>
     </div>
   </footer>
-  <section class="popup write-us">
-    <form class="letter" method="post" action="https://........">
+  <section class="popup-write-us">
+    <h3 class="visually-hidden">Напишите нам отзыв</h3>
+    <form class="letter" method="post" action="https://echo.htmlacademy.ru">
       <fieldset>
         <legend>Напишите нам</legend>
         <p class="writer-info">
-          <label for="info name">Ваше имя</label>
-          <input id="info name" type="text" name="name" value=""
-          placeholder="Представьтесь,пожалуйста">
+          <label for="info-name">Ваше имя</label>
+          <input id="info-name" type="text" name="name"
+           placeholder="Представьтесь,пожалуйста">
         </p>
         <p>
-          <label for="info name">Ваш e-mail</label>
-          <input id="info mail" type="text" name="mail" value=""
-          placeholder="Для отправки ответа">
+          <label for="info-mail">Ваш e-mail</label>
+          <input id="info-mail" type="text" name="mail"
+           placeholder="Для отправки ответа">
         </p>
         <p>
-          <label for="info name">Текст письма</label>
-          <input id="info text" type="text" name="text" value=""
-          placeholder="В свободной форме">
+          <label for="info-text">Текст письма</label>
+          <input id="info-text" type="text" name="text"
+           placeholder="В свободной форме">
         </p>
         <span class="modal-close">x</span>
       </fieldset>
