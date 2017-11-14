@@ -36,7 +36,7 @@
           <label for="min-cost">ОТ</label>
           <input type="number" min="0" max="14999" id="min-cost" name="min-cost" value="0">
         </div>
-        <div class="one-third-width">
+        <div class="width-range">
           <label for="max-cost">ДО</label>
           <input type="number" min="1" max="1500" id="max-cost" name="max-cost" value="15000">
         </div>
@@ -106,8 +106,8 @@
           <a href="categories-item.html">По названию</a>
         </li>
       </ul>
-      <a class="button" href="categories-item.html">возрастание</a>
-      <a class="button" href="categories-item.html">убывание</a>
+      <a class="button catalog-button catalog-button-up" href="categories-item.html">возрастание</a>
+      <a class="button catalog-button catalog-button-down" href="categories-item.html">убывание</a>
     </section>
     <section class="catalog">
       <h2 class="visually-hidden">Список макетов сайтов</h2>
@@ -209,19 +209,19 @@
         <p class="writer-info">
           <label for="info-name">Ваше имя</label>
           <input id="info-name" type="text" name="name"
-           placeholder="Представьтесь,пожалуйста">
+          placeholder="Представьтесь,пожалуйста">
         </p>
         <p>
           <label for="info-mail">Ваш e-mail</label>
           <input id="info-mail" type="text" name="mail"
-           placeholder="Для отправки ответа">
+          placeholder="Для отправки ответа">
         </p>
         <p>
           <label for="info-text">Текст письма</label>
           <input id="info-text" type="text" name="text"
-           placeholder="В свободной форме">
+          placeholder="В свободной форме">
         </p>
-        <span class="modal-close">x</span>
+        <button class="modal-close" type="button">Закрыть</button>
       </fieldset>
       <button type="submit" class="info-button button">Отправить</button>
     </form>
