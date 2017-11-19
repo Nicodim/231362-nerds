@@ -3,6 +3,9 @@
 <head>
   <meta charset="utf-8">
   <title>HTML Academy: Нёрдс</title>
+  <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&amp;subset=cyrillic"
+  rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
   <header class="main-header">
@@ -96,7 +99,7 @@
           <a href="catalog-items.html">
             <h3>Презентации</h3>
           </a>
-          <p>Вы даже не подозреваете, на сколько выизумительны!</p>
+          <p>Вы даже не подозреваете, на сколько вы изумительны!</p>
           <p>
             <img src="img/illustration-3.png" width="300" height="146" alt="Презентации">
           </p>
@@ -109,7 +112,7 @@
     <section class="about">
       <p><b>Мы - маленькая, но гордая дизайн - студия из Краснодара.</b></p>
       <p>Исповедуем принципы минимализма и частоты.Ставим математический расчет превыше креатива.Работаем не покладая рук как роботы.</p>
-      <h3>Выполняем заказы на разработку:</h3>
+      <p>ВЫПОЛНЯЕМ ЗАКАЗЫ НА РАЗРАБОТКУ:</p>
       <ul class="about-item">
         <li>Веб-сайтов любой сложности</li>
         <li>Мобильных приложений для iOS и Android</li>
@@ -119,14 +122,14 @@
       <h3>C 2004 года любим точность во всем:</h3>
       <table class="about-table">
         <tr>
-          <td>146%</td>
-          <td>100%</td>
-          <td>50%</td>
+          <td class="table-number">146%</td>
+          <td class="table-number">100%</td>
+          <td class="table-number">50%</td>
         </tr>
         <tr>
-          <td>Уровень самоотдачи</td>
-          <td>Соблюдение сроков</td>
-          <td>минимальная предоплата</td>
+          <td class="table-text">Уровень самоотдачи</td>
+          <td class="table-text">Соблюдение сроков</td>
+          <td class="table-text">минимальная предоплата</td>
         </tr>
       </table>
 
@@ -189,17 +192,17 @@
           <input id="info-name" type="text" name="name"
           placeholder="Представьтесь,пожалуйста">
         </p>
-        <p>
+        <p class="writer-info">
           <label for="info-mail">Ваш e-mail</label>
           <input id="info-mail" type="text" name="mail"
           placeholder="Для отправки ответа">
         </p>
-        <p>
+        <p class="writer-info">
           <label for="info-text">Текст письма</label>
           <input id="info-text" type="text" name="text"
           placeholder="В свободной форме">
         </p>
-        <span class="modal-close">x</span>
+        <button class="modal-close" type="button">x</button>
       </fieldset>
       <button type="submit" class="info-button button">Отправить</button>
     </form>

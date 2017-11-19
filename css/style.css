@@ -1,0 +1,152 @@
+body {
+  margin: 0;
+  padding: 0;
+
+  font-family:"Roboto", Arial, sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 700;
+  color: #000000;
+
+  background-color: #ffffff;
+}
+a {
+  text-decoration: none;
+}
+.button{
+  font:inherit;
+
+  text-align: center;
+  color: #ffffff;
+  vertical-align: middle;
+
+  border: none;
+  background-color: #fb565a;
+}
+button:hover,
+button:focus{
+  background-color: #e74246;
+}
+.button:active{
+  background-color: #d7373b;
+}
+.main-header {
+  font-size: 16px;
+  line-height: 30px;
+  color: #000000;
+
+  background-color: #eeeeee;
+}
+.site-navigation,
+.user-navigation {
+  list-style: none;
+}
+.site-navigation a,
+.user-navigation a {
+  color: #000000;
+}
+.site-navigation a:hover,
+.site-navigation a:focus,
+.user-navigation a:hover,
+.user-navigation a:focus {
+  color: #e74246;
+}
+.main-header b {
+  font-size:55px;
+  line-height:55px;
+}
+.catalog-list {
+  list-style: none;
+}
+.catalog-item {
+  text-align: left;
+}
+.catalog-item h3 {
+  font-size: 24px;
+  line-height: 30px;
+}
+.about {
+  list-style: none;
+}
+.about b {
+  font-size:45px;
+  line-height:45px;
+}
+.about-item {
+text-align: left;
+}
+.about h3 {
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: bold;
+}
+.table-number {
+  font-size: 45px;
+  line-height: 10,06px;
+  font-weight: bold;
+}
+.table-text {
+  font-size: 16px;
+  line-height: 18px;
+}
+.list-items {
+  font-size: 12px;
+  line-height: auto;
+  color:rgba(0, 0, 0, 0.2);
+}
+.list-items li:hover,
+.list-items li:focus {
+  color:#000000;
+}
+.list-items li:active {
+  color:rgba(0, 0, 0, 0.3);
+}
+.location {
+  text-align: center;
+}
+.location p {
+  font-size: 16px;
+  line-height: 18px;
+}
+.location h3 {
+  font-size: 18px;
+  line-height: 30px;
+  font-weight: bold;
+}
+.main-footer {
+  color: #000000;
+  background-color: #ffffff;
+}
+.main-footer b {
+  font-size: 36px;
+  line-height: 36px;
+  font-weight: bold;
+}
+.main-footer p {
+  font-size: 16px;
+  line-height: 22px;
+}
+.footer-social ul{
+  text-decoration: none;
+}
+.social-button {
+  color: #ffffff;
+}
+.popup-write-us input {
+  font: inherit;
+  color: #ffffff;
+  background-color: transparent;
+  border: 2px solid rgba(0,0,0,0.5);
+}
+.popup-write-us input:focus {
+  border-color: #000000;
+}
+.popup-write-us h3 {
+  font-size: 45px;
+  line-height: 45px;
+}
+.popup-write-us label {
+  font-size: 16px;
+  line-height: 18px;
+  font-weight: bold;
+}
