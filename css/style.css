@@ -2,16 +2,13 @@ body {
   margin: 0;
   padding: 0;
 
-  font-family:"Roboto", Arial, sans-serif;
+  font-family: "Roboto", Arial, sans-serif;
   font-size: 16px;
   line-height: 24px;
   font-weight: 700;
   color: #000000;
+  text-transform: uppercase;
 
-  background-color: #ffffff;
-}
-.inner-page {
-  color:#000000;
   background-color: #ffffff;
 }
 h1 {
@@ -26,25 +23,26 @@ a:hover,
 a:focus{
   color: #fb565a;
 }
-a:active{
+a:active {
   color: rgba(0,0,0,0.3);
 }
-.button{
+.button {
   font: inherit;
 
   text-align: center;
   color: #ffffff;
   vertical-align: middle;
+  text-transform: uppercase;
 
   border: none;
   background-color: #fb565a;
 }
 .button:hover,
-.button:focus{
+.button:focus {
   background-color: #e74246;
   color: #ffffff;
 }
-.button:active{
+.button:active {
   background-color: #d7373b;
   color: rgba(255,255,255,0.3);
 }
@@ -69,6 +67,10 @@ a:active{
 .user-navigation a:focus {
   color: #e74246;
 }
+.site-navigation a:focus,
+.user-navigation a:focus {
+border-bottom: 1px solid #fb565a;
+}
 .main-header b {
   font-size: 55px;
   line-height: 55px;
@@ -83,7 +85,7 @@ a:active{
   font-size: 24px;
   line-height: 30px;
 }
-.categories{
+.categories {
   list-style: none;
 }
 .categories h3 {
@@ -91,7 +93,7 @@ a:active{
   line-height: 18px;
   font-weight: bold;
 }
-.categories a{
+.categories a {
   color: rgba(0,0,0,0.3);
   text-decoration: none;
 }
@@ -124,7 +126,7 @@ a:active{
 }
 .filter-button {
   color: #000000;
-  background-color:#eeeeee;
+  background-color: #eeeeee;
 }
 .filter-button:hover,
 .filter-button:focus {
@@ -159,7 +161,7 @@ text-align: left;
 .pagination-list {
   list-style: none;
 }
-.pagination-item a{
+.pagination-item a {
   color: #000000;
   background-color: #eeeeee;
 }
@@ -224,15 +226,17 @@ text-align: left;
   font-size: 16px;
   line-height: 22px;
 }
-.footer-social li{
+.footer-social li {
   text-decoration: none;
 }
 .social-button {
   color: #ffffff;
 }
-.popup-write-us input {
+.popup-write-us input[type="text"] {
   font: inherit;
   color: #ffffff;
+  text-transform: uppercase;
+
   background-color: transparent;
   border: 2px solid rgba(0,0,0,0.5);
 }
