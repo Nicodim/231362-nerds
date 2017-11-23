@@ -91,14 +91,17 @@ a {
   font-weight: bold;
 }
 .categories a {
-  color: rgba(0,0,0,0.3);
+  color: #000000;
   text-decoration: none;
 }
 .categories-item a:hover,
 .categories-item a:focus {
   color: rgba(0,0,0,0.6);
 }
-.categories-item-current {
+.categories a:active {
+  color: rgba(0,0,0,0.3);
+}
+.categories-item-current a{
   color: #000000;
 }
 .filter fieldset {
@@ -137,7 +140,7 @@ a {
   font-size: 45px;
   line-height: 45px;
 }
-.about-item {
+.about ul {
 list-style: none;
 text-align: left;
 }
@@ -149,11 +152,32 @@ text-align: left;
 .catalog-list {
   list-style: none;
 }
-.catalog-item-image {
+.catalog-item a {
+  text-decoration: none;
+  color: rgba(0,0,0,0.12);
   box-shadow: 0 0 10px rgba(0,0,0,0.1);
 }
-.catalog-item-image:hover {
+.catalog-item a:hover,
+.catalog-item a:focus {
+  color: #000000;
   box-shadow: 0 0 10px rgba(0,0,0,0.2);
+}
+.name-site {
+    text-decoration: none;
+    color: #000000;
+}
+.catalog-item-price a {
+  color: #ffffff;
+  background-color: #fb565a;
+}
+.catalog-item-price a:hover,
+.catalog-item-price a:focus {
+  color: #ffffff;
+  background-color: #e74246;
+}
+.catalog-item-price a:active {
+  color: #ffffff;
+  background-color: #d7373b;
 }
 .pagination-list {
   list-style: none;
@@ -185,6 +209,9 @@ text-align: left;
 .table-text {
   font-size: 16px;
   line-height: 18px;
+}
+.project ul {
+  text-decoration: none;
 }
 .list-items {
   font-size: 12px;
