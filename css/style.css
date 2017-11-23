@@ -61,8 +61,12 @@ a {
 }
 .site-navigation a:active,
 .user-navigation a:active {
-color: #000000;
-border-bottom: 1px solid #fb565a;
+  color: rgba(0,0,0,0.3);
+}
+.site-navigation-current a,
+.user-navigation-current a {
+ color: #000000;
+ border-bottom: 1px solid #fb565a;
 }
 .main-header b {
   font-size: 55px;
@@ -78,7 +82,7 @@ border-bottom: 1px solid #fb565a;
   font-size: 24px;
   line-height: 30px;
 }
-.categories {
+.categories ul {
   list-style: none;
 }
 .categories h3 {
@@ -90,11 +94,11 @@ border-bottom: 1px solid #fb565a;
   color: rgba(0,0,0,0.3);
   text-decoration: none;
 }
-.categories-list a:hover,
-.categories-list a:focus {
+.categories-item a:hover,
+.categories-item a:focus {
   color: rgba(0,0,0,0.6);
 }
-.categories-current {
+.categories-item-current {
   color: #000000;
 }
 .filter fieldset {
@@ -219,7 +223,7 @@ text-align: left;
   font-size: 16px;
   line-height: 22px;
 }
-.footer-social li {
+.footer-social ul {
   text-decoration: none;
 }
 .social-button {
