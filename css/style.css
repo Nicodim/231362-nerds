@@ -11,20 +11,12 @@ body {
 
   background-color: #ffffff;
 }
-h1 {
+.main-title {
   font-size: 55px;
   line-height: 55px;
 }
 a {
   text-decoration: none;
-  color: #000000;
-}
-a:hover,
-a:focus{
-  color: #fb565a;
-}
-a:active {
-  color: rgba(0,0,0,0.3);
 }
 .button {
   font: inherit;
@@ -67,8 +59,9 @@ a:active {
 .user-navigation a:focus {
   color: #e74246;
 }
-.site-navigation a:focus,
-.user-navigation a:focus {
+.site-navigation a:active,
+.user-navigation a:active {
+color: #000000;
 border-bottom: 1px solid #fb565a;
 }
 .main-header b {
