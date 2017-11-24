@@ -90,6 +90,10 @@ a {
   line-height: 30px;
   color: #000000;
 }
+.catalog-item h3:hover,
+.catalog-item h3:focus {
+  color: #fb565a;
+}
 .catalog-item h3:active {
   color: rgba(0,0,0,0.3);
 }
