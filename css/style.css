@@ -72,8 +72,8 @@ a {
 }
 .site-navigation-current a,
 .user-navigation-current a {
- color: #000000;
- border-bottom: 1px solid #fb565a;
+  color: #000000;
+  border-bottom: 1px solid #fb565a;
 }
 .main-header b {
   font-size: 55px;
@@ -88,13 +88,15 @@ a {
 .catalog-item h3 {
   font-size: 24px;
   line-height: 30px;
+}
+.catalog-item a {
   color: #000000;
 }
-.catalog-item h3:hover,
-.catalog-item h3:focus {
+.catalog-item a:hover,
+.catalog-item a:focus {
   color: #fb565a;
 }
-.catalog-item h3:active {
+.catalog-itema a:active {
   color: rgba(0,0,0,0.3);
 }
 .cite-items .button-1 {
@@ -152,7 +154,7 @@ a {
 .categories-item a:focus {
   color: rgba(0,0,0,0.6);
 }
-.categories a:active {
+.categories-item a:active {
   color:color: #000000;
 }
 .categories-item-current a{
@@ -182,6 +184,7 @@ a {
   opacity: 0.3;
 }
 .filter-button {
+  text-decoration: none;
   color: #000000;
   background-color: #eeeeee;
 }
@@ -189,6 +192,11 @@ a {
 .filter-button:focus {
   color: #000000;
   background-color: #dfdfdf;
+}
+.filter-button:active {
+  color: rgba(0,0,0,0.3);
+  background-color: #d5d5d5;
+  border-top: 1px solid #bfbfbf;
 }
 .about {
   list-style: none;
@@ -198,8 +206,8 @@ a {
   line-height: 45px;
 }
 .about ul {
-list-style: none;
-text-align: left;
+  list-style: none;
+  text-align: left;
 }
 .about h3 {
   font-size: 16px;
@@ -209,7 +217,7 @@ text-align: left;
 .catalog-list {
   list-style: none;
 }
-.catalog-item a {
+.catalog-item-image a {
   text-decoration: none;
   color: rgba(0,0,0,0.12);
   box-shadow: 0 0 10px rgba(0,0,0,0.1);
@@ -219,9 +227,16 @@ text-align: left;
   color: #000000;
   box-shadow: 0 0 10px rgba(0,0,0,0.2);
 }
-.info-page .name-site  {
+.name-site  {
   text-decoration: none;
   color: #000000;
+}
+.name-site:hover,
+.name-site:focus {
+  color: #fb565a;
+}
+.name-site:active {
+  color: #fb565a;
 }
 .info-page .button {
   color: #ffffff;
