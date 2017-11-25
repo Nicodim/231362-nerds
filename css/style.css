@@ -296,13 +296,14 @@ a {
 .item-logo img {
   font-size: 12px;
   line-height: auto;
+  opacity: 0.2;
 }
 .item-logo  img:hover,
 .item-logo  img:focus {
-  opacity: 0.2;
+  opacity: 1;
 }
 .item-logo img:active {
-  opacity: 0.3;
+  opacity: 0.1;
 }
 .location {
   text-align: center;
