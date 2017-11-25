@@ -89,16 +89,6 @@ a {
   font-size: 24px;
   line-height: 30px;
 }
-.catalog-item a {
-  color: #000000;
-}
-.catalog-item a:hover,
-.catalog-item a:focus {
-  color: #fb565a;
-}
-.catalog-itema a:active {
-  color: rgba(0,0,0,0.3);
-}
 .cite-items .button-1 {
   color: #ffffff;
   background-color: #fb565a;
@@ -155,7 +145,7 @@ a {
   color: rgba(0,0,0,0.6);
 }
 .categories-item a:active {
-  color:color: #000000;
+  color: #000000;
 }
 .categories-item-current a{
   color: #000000;
@@ -217,17 +207,16 @@ a {
 .catalog-list {
   list-style: none;
 }
-.catalog-item-image a {
+.catalog-list li {
   text-decoration: none;
-  color: rgba(0,0,0,0.12);
+  color: #000000;
   box-shadow: 0 0 10px rgba(0,0,0,0.1);
 }
-.catalog-item a:hover,
-.catalog-item a:focus {
-  color: #000000;
+.catalog-list li:hover,
+.catalog-list li:focus {
   box-shadow: 0 0 10px rgba(0,0,0,0.2);
 }
-.name-site  {
+.name-site {
   text-decoration: none;
   color: #000000;
 }
@@ -236,7 +225,7 @@ a {
   color: #fb565a;
 }
 .name-site:active {
-  color: #fb565a;
+  color: rgba(0,0,0,0.3);
 }
 .info-page .button {
   color: #ffffff;
