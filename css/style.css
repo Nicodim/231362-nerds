@@ -89,6 +89,16 @@ a {
   font-size: 24px;
   line-height: 30px;
 }
+.catalog-item a {
+  color: #000000;
+}
+.catalog-item a:hover,
+.catalog-item a:focus {
+  color: #fb565a;
+}
+.catalog-item a:active {
+  color: rgba(0,0,0,0.3);
+}
 .cite-items .button-1 {
   color: #ffffff;
   background-color: #fb565a;
@@ -98,9 +108,10 @@ a {
   color: #ffffff;
   background-color: #e74246;
 }
-.cite-items .batton-1:active {
+.cite-items .button-1:active {
   color: rgba(255, 255, 255, 0.3);
   background-color: #d7373b;
+  border-top: 1px solid #c13135;
 }
 .cite-items .button-2 {
   color: #ffffff;
@@ -111,9 +122,10 @@ a {
   color: #ffffff;
   background-color: #00bc6c;
 }
-.cite-items .batton-2:active {
+.cite-items .button-2:active {
   color: rgba(255, 255, 255, 0.3);
   background-color: #00aa62;
+  border-top: 1px solid #009958;
 }
 .cite-items .button-3 {
   color: #ffffff;
@@ -124,9 +136,10 @@ a {
   color: #ffffff;
   background-color: #eab534;
 }
-.cite-items .batton-3:active {
+.cite-items .button-3:active {
   color: rgba(255, 255, 255, 0.3);
   background-color: #e5a722;
+  border-top: 1px solid #ce961f;
 }
 .categories ul {
   list-style: none;
@@ -204,16 +217,16 @@ a {
   line-height: 24px;
   font-weight: bold;
 }
-.catalog-list {
+.catalog-list-inner {
   list-style: none;
 }
-.catalog-list li {
+.catalog-list-inner .catalog-item-image {
   text-decoration: none;
   color: #000000;
   box-shadow: 0 0 10px rgba(0,0,0,0.1);
 }
-.catalog-list li:hover,
-.catalog-list li:focus {
+.catalog-list-inner .catalog-item-image:hover,
+.catalog-list-inner .catalog-item-image:focus {
   box-shadow: 0 0 10px rgba(0,0,0,0.2);
 }
 .name-site {
