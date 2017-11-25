@@ -293,16 +293,14 @@ a {
 .project ul {
   list-style: none;
 }
-.item-logo img {
-  font-size: 12px;
-  line-height: auto;
+.item-logo {
   opacity: 0.2;
 }
-.item-logo  img:hover,
-.item-logo  img:focus {
+.item-logo:hover,
+.item-logo:focus {
   opacity: 1;
 }
-.item-logo img:active {
+.item-logo:active {
   opacity: 0.1;
 }
 .location {
