@@ -11,7 +11,6 @@
 <body class="inner-page">
   <header class="main-header">
     <nav class="main-navigation" >
-      <div class="main-navigation-wrapper">
         <div class="container">
           <a class="link" href="index.html">
             <img src="img/nerds-logo.svg" width="160" height="65" alt="логотип сайта нердс">
@@ -26,13 +25,14 @@
             <li><a href="basket.html">Корзина</a></li>
           </ul>
         </div>
-      </div>
       <h1 class="main-title">Магазин готовых шаблонов</h1>
     </nav>
   </header>
+  
   <main class="container">
     <h2 class="visually-hidden">Магазин</h2>
     <div class="catalog-colunms">
+
       <section class="filters">
         <h2 class="visually-hidden">Фильтр товаров</h2>
         <h3>Стоимость:</h3>
@@ -101,24 +101,24 @@
           <button type="submit" class="filter-button button">Показать</button>
         </form>
       </section>
-    </div>
-    <section class="categories">
-      <h3>Сортировать:</h3>
-      <ul class="categories-list">
-        <li class="categories-item categories-item-current">
-          <a>По цене</a>
-        </li>
-        <li class="categories-item">
-          <a href="categories-item.html">По типу</a>
-        </li>
-        <li class="categories-item">
-          <a href="categories-item.html">По названию</a>
-        </li>
-      </ul>
-      <a class="button catalog-button catalog-button-up" href="categories-item.html">возрастание</a>
-      <a class="button catalog-button catalog-button-down" href="categories-item.html">убывание</a>
-    </section>
-    <div class="catalog-colunms">
+      <div class="right-column">
+      <section class="categories">
+        <h3>Сортировать:</h3>
+        <ul class="categories-list">
+          <li class="categories-item categories-item-current">
+            <a>По цене</a>
+          </li>
+          <li class="categories-item">
+            <a href="categories-item.html">По типу</a>
+          </li>
+          <li class="categories-item">
+            <a href="categories-item.html">По названию</a>
+          </li>
+        </ul>
+        <a class="button catalog-button catalog-button-up" href="categories-item.html">возрастание</a>
+        <a class="button catalog-button catalog-button-down" href="categories-item.html">убывание</a>
+      </section>
+
       <section class="catalog-inner">
         <h2 class="visually-hidden">Список макетов сайтов</h2>
         <ul class="catalog-list-inner">
@@ -229,6 +229,7 @@
         </ul>
       </section>
     </div>
+    </div>
     <section class="location">
       <img src="img/map.png" width="1440" height="416"  alt="Адрес офиса на Нердс на ул.Б.Конюшенная,д 19/8 ">
       <h3>NERDS DESIGN STUDIO</h3>
@@ -242,15 +243,17 @@
       </p>
     </section>
   </main>
-  <footer class="main-footer">
+  <footer class="main-footer container">
     <div class="footer-social">
-      <b>Давайте дружить, это выгодно!</b>
-      <p>Скидка 10% для друзей из социальных сетей</p>
       <ul>
         <li><a class="social-button" href="#">Вконтакте</a></li>
         <li><a class="social-button" href="#">Фейсбук</a></li>
         <li><a class="social-button" href="#">Инстаграм</a></li>
       </ul>
+    </div>
+    <div class="footer-info">
+      <b>Давайте дружить, это выгодно!</b>
+      <p>Скидка 10% для друзей из социальных сетей</p>
     </div>
   </footer>
   <section class="popup-write-us">
