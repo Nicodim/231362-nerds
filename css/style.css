@@ -13,6 +13,9 @@ body {
   font-size: 55px;
   line-height: 55px;
 }
+.visually-hidden {
+  visibility: hidden;
+}
 a {
   text-decoration: none;
   text-transform: uppercase;
