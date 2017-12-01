@@ -37,17 +37,22 @@
         <h2 class="visually-hidden">Фильтр товаров</h2>
         <h3>Стоимость:</h3>
         <form class="filter" method="get" action="https//:echo.htmlacademy.ru">
-          <span class="visually-hidden">1</span>
-          <input type="range" name="cost" min="1" max="15000" step="1">
-          <span class="visually-hidden">15000</span>
-          <div class="width-range">
-            <label for="min-cost">ОТ</label>
-            <input type="number" min="0" max="14999" id="min-cost" name="min-cost" value="0">
-          </div>
-          <div class="width-range">
-            <label for="max-cost">ДО</label>
-            <input type="number" min="1" max="1500" id="max-cost" name="max-cost" value="15000">
-          </div>
+          <fieldset class="filter-item">
+            <legend>Стоимость:</legend>
+            <div class="range-filter">
+              <div class="range-controls">
+                <div class="scale">
+                  <div class="bar"></div>
+                </div>
+                <div class="toggle toggle-min"></div>
+                <div class="toggle toggle-max"></div>
+              </div>
+              <div class="price-controls">
+                <label class="min-price">от <input name="min-price" type="text" value="0"></label>
+                <label class="max-price">до <input name="max-price" type="text" value="15000"></label>
+              </div>
+            </div>
+          </fieldset>
           <fieldset>
             <legend>Сетка</legend>
             <ul>
