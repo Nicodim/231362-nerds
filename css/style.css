@@ -57,7 +57,6 @@ img {
 
   width: 160px;
   height: 65px;
-  padding: 25px 20px;
 }
 .button {
   display: inline-block;
@@ -93,8 +92,10 @@ img {
 
   background-color: #eeeeee;
   margin-bottom: 75px;
+  padding-top: 50px;
 }
 .inner-page .main-header {
+  padding-bottom: 110px;
   margin-bottom: 55px;
 }
 .slider {
@@ -223,20 +224,19 @@ img {
 .main-title {
   margin: 0;
   padding: 0;
-  margin: 95px 235px;
+  margin-top: 95px;
   text-align: center;
 }
 .main-navigation .container {
   display: flex;
   justify-content: space-between;
-  margin-bottom: -33px;
+
   align-items: center;
   flex-wrap: wrap;
 }
 .main-navigation-inner .container {
   display: flex;
   justify-content: space-between;
-  margin-bottom: -33px;
   align-items: center;
   flex-wrap: wrap;
 }
@@ -247,6 +247,7 @@ img {
   width: 556px;
   margin-right: 49px;
   padding: 0;
+  margin: 0;
   align-items: center;
 
   list-style: none;
@@ -288,7 +289,7 @@ img {
   content: "";
 
   position: absolute;
-  bottom: 40px;
+  bottom: 8px;
   left: 15px;
   width: 15px;
   height: 15px;
@@ -432,6 +433,7 @@ img {
 .sort-categories {
   display: flex;
   align-items: center;
+  margin-bottom: 40px;
 }
 .sort-categories-list {
   margin: 0;
@@ -440,6 +442,9 @@ img {
   display: flex;
   flex-wrap: wrap;
 
+}
+.sort-categories-list li {
+  margin-right: 25px;
 }
 .sort-categories h3 {
   font-size: 18px;
@@ -468,25 +473,47 @@ img {
   padding: 0;
   list-style: none;
   display: flex;
-  position: relative;
   justify-content: space-between;
   margin-left: 20px;
   font-size: 0;
 }
-.sort-direction::before {
+.sort-direction li {
+  margin-left: 20px;
+}
+.sort-direction a {
+  position: relative;
+}
+ .catalog-button-up::before {
   content: "";
-  position: absolute;
+  display: block;
   width: 11px;
   height: 11px;
-  background-image: url('../img/icon-down-dir.svg'),
+  background-image: url('../img/icon-up-dir.svg');
+  background-repeat: no-repeat;
+  opacity: 0.3;
+}
+.catalog-button-down::before {
+ content: "";
+ display: block;
+ width: 11px;
+ height: 11px;
+ background-image: url('../img/icon-down-dir.svg');
+ background-repeat: no-repeat;
+ opacity: 0.3;
+}
+.catalog-button-up:hover::before,
+.catalog-button-up:focus::before,
+.catalog-button-down:hover::before,
+.catalog-button-down:focus::before {
+  opacity: 1;
 }
 .filters {
   width: 300px;
+  padding-top: 13px;
 }
 
 .range-filter {
   width: 260px;
-  margin-top: 49px;
 }
 .range-controls {
   position: relative;
@@ -571,7 +598,7 @@ img {
   line-height: 30px;
   text-transform: uppercase;
   font-weight: 700;
-  margin-bottom: 24px;
+  margin-bottom: 51px;
 }
 .filter ul {
   padding: 0;
@@ -591,6 +618,15 @@ img {
   cursor: pointer;
   user-select: none;
 }
+.filter-input-radio:checked+label::before {
+  position: absolute;
+  content: "";
+  top: -3px;
+  left: -35px;
+  width: 25px;
+  height: 25px;
+  background-image: url('../img/radio-on.svg');
+}
 .filter-input-radio+label::before {
   position: absolute;
   content: "";
@@ -598,20 +634,17 @@ img {
   left: -35px;
   width: 25px;
   height: 25px;
-  border: 2px solid #000000;
-  border-radius: 50%;
-
+  background-image: url('../img/radio-off.svg');
 }
-.filter-input-radio:checked+label::after {
+.filter-input-checkbox:checked+label::before {
   content: "";
-
   position: absolute;
-  width: 25px;
-  height: 25px;
-  left: -33px;
-  top: -1px;
-  background-image: url('../img/radio-on.svg');
-  background-repeat: no-repeat;
+  left: -35px;
+  top: -3px;
+  width: 23px;
+  height: 23px;
+ background-image: url('../img/checkbox-on.svg');
+ background-repeat: no-repeat;
 }
 .filter-input-checkbox+label::before {
   content: "";
@@ -620,23 +653,10 @@ img {
   top: -3px;
   width: 23px;
   height: 23px;
-  border: 2px solid #000000;
-
+ background-image: url('../img/checkbox-off.svg');
+ background-repeat: no-repeat;
 }
-.filter-input-checkbox:checked+label::after {
-  content: "";
 
-  position: absolute;
-  top: -1px;
-  left: -33px;
-  width: 23px;
-  height: 23px;
-
-
-  background-image: url('../img/checkbox-on.svg');
-  background-repeat: no-repeat;
-  background-position: 0 0;
-}
 .filter-input+label {
   color: #283136;
 }
@@ -646,6 +666,18 @@ img {
 }
 .filter-input:disabled+label {
   color: #283136;
+
+  opacity: 0.3;
+}
+.filter-input+label::before {
+  opacity: 0.4;
+}
+.filter-input:hover+label::before,
+.filter-input:focus+label::before {
+  opacity: 1;
+}
+.filter-input:disabled+label::before {
+  opacity: 0.1;
 
   opacity: 0.3;
 }
@@ -765,29 +797,31 @@ img {
 }
 .catalog-item-inner {
   position: relative;
-  padding-top: 40px;
 }
 .catalog-item-inner::before {
   content: "";
 
-  position: absolute;
+  display: block;
   width: 360px;
   height: 40px;
   top:16px;
   background-image: url('../img/browser.svg');
   background-repeat: no-repeat;
   background-position: 0 0;
-}
-.catalog-item-inner::before:hover {
   opacity: 0.12;
+}
+.catalog-item-inner:hover::before {
+  opacity: 1;
 }
 .info-page {
 position: absolute;
 top: 388px;
 background-color: #eeeeee;
 text-align: center;
-padding: 40px 75px;
+width: 100%;
+padding: 40px 80px;
 color: #666666;
+box-sizing: border-box;
 }
 .name-site {
   text-decoration: none;
@@ -828,41 +862,41 @@ color: #666666;
   margin-bottom: 6;
   list-style: none;
 }
-.pagination-item a {
+.pagination-item .pagination-button {
   margin: 0;
   padding: 20px 25px;
   color: #000000;
   background-color: #eeeeee;
   align-items: center;
 }
-.pagination-item-word a{
+.pagination-item-word .pagination-button{
   margin: 0;
   padding: 20px 76px;
   color: #000000;
   background-color: #eeeeee;
   align-items: center;
 }
-.pagination-item a:hover,
-.pagination-item a:focus,
-.pagination-item-word a:hover,
-.pagination-item-word a:hover{
+.pagination-item .pagination-button:hover,
+.pagination-item .pagination-button:focus,
+.pagination-item-word .pagination-button:hover,
+.pagination-item-word .pagination-button:hover{
   color: #000000;
   background-color: #dfdfdf;
 }
-.pagination-item a:active,
-.pagination-item-word a:active {
+.pagination-item .pagination-button:active,
+.pagination-item-word .pagination-button:active {
   color: rgba(0,0,0,0.3);
   background-color: #d5d5d5;
   border-top: 1px solid #bfbfbf;
 }
-.pagination-item-current a,
-.pagination-item-word-current a {
+.pagination-item-current .pagination-button,
+.pagination-item-word-current .pagination-button {
   color: #000000;
   background-color: #ffffff;
   border: 1px solid #eeeeee;
 }
-.pagination-item-current a:hover,
-.pagination-item-current a:focus {
+.pagination-item-current .pagination-button:hover,
+.pagination-item-current .pagination-button:focus {
   color: #000000;
   background-color: #ffffff;
   border: 1px solid #eeeeee;
