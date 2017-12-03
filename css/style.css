@@ -7,7 +7,7 @@ body {
   font-size: 16px;
   line-height: 24px;
   font-weight: 400;
-  color: #000000;
+  color: #283136;
 
   background-color: #ffffff;
 }
@@ -61,8 +61,7 @@ img {
 }
 .button {
   display: inline-block;
-  width: 240px;
-  padding: 13px 0;
+  padding: 16px 40px;
   margin-right: 16px;
 
   font-size: 16px;
@@ -94,12 +93,9 @@ img {
 
   background-color: #eeeeee;
   margin-bottom: 75px;
-    /* Временно для сетки */
-  min-height: 540px;
 }
 .inner-page .main-header {
   margin-bottom: 55px;
-  min-height: 355px;
 }
 .slider {
   position: relative;
@@ -109,7 +105,9 @@ img {
   display: none;
   padding: 78px 0 80px 0;
 }
-
+.slider-item a {
+ padding: 16px 54px;
+}
 .slider-item:nth-child(1) {
   display: block;
 }
@@ -117,8 +115,8 @@ img {
   background-image: url(../img/slide1.png);
   background-repeat: no-repeat;
   background-position: 93% 18px;
-  }
-  .slider-item:nth-child(2) {
+}
+.slider-item:nth-child(2) {
   background-image: url(../img/slide2.png);
   background-repeat: no-repeat;
   background-position: 100% 0;
@@ -168,18 +166,18 @@ img {
 .slider-controls .active::before {
   content: "";
 
-    position: absolute;
-    left: 50%;
-    top: 50%;
-    z-index: 2;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  z-index: 2;
 
-    width: 4px;
-    height: 4px;
-    margin: -4px;
+  width: 4px;
+  height: 4px;
+  margin: -4px;
 
-    background-color: inherit;
-    border: 2px solid #c1c1c1;
-    border-radius: 50%;
+  background-color: inherit;
+  border: 2px solid #c1c1c1;
+  border-radius: 50%;
 }
 .slider-list {
   margin: 0;
@@ -203,6 +201,7 @@ img {
   max-width: 430px;
   margin: 0;
   margin-bottom: 38px;
+  color: #283136;
 }
 .link:hover,
 .link:focus {
@@ -215,18 +214,31 @@ img {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  /* Временно для сетки */
 }
 .inner-page .main-navigation {
-  align-items: flex-start;
-  flex-direction: row;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.main-title {
+  margin: 0;
+  padding: 0;
+  margin: 95px 235px;
+  text-align: center;
 }
 .main-navigation .container {
   display: flex;
-  justify-content: space-around;
-  margin-bottom: 80px;
+  justify-content: space-between;
+  margin-bottom: -33px;
   align-items: center;
-  /* Временно для сетки */
+  flex-wrap: wrap;
+}
+.main-navigation-inner .container {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: -33px;
+  align-items: center;
+  flex-wrap: wrap;
 }
 .site-navigation {
   display: flex;
@@ -234,25 +246,23 @@ img {
   justify-content: space-around;
   width: 556px;
   margin-right: 49px;
-  padding: 25px;
+  padding: 0;
   align-items: center;
 
   list-style: none;
-  /* Временно для сетки */
 }
 .user-navigation {
   display: flex;
   max-width: 156px;
   margin: 0;
-  padding: 25px;
+  padding: 0;
 
   list-style: none;
-  /* Временно для сетки */
 }
 .site-navigation a,
 .user-navigation a {
   display: block;
-  padding: 32px 10px;
+  padding: 0;
   color: #000000;
 }
 .site-navigation a:hover,
@@ -279,7 +289,7 @@ img {
 
   position: absolute;
   bottom: 40px;
-  left: 20px;
+  left: 15px;
   width: 15px;
   height: 15px;
 
@@ -303,7 +313,13 @@ img {
   margin-bottom: 35px;
 
   list-style: none;
-  /* Временно для сетки */
+}
+.catalog-inner {
+  margin: 0;
+  padding: 0;
+  margin-bottom: 35px;
+
+  list-style: none;
 }
 .catalog-list {
   margin: 0;
@@ -322,6 +338,10 @@ img {
   width: 300px;
   text-align: left;
 }
+.catalog-item-inner {
+  width: 360px;
+  text-align: left;
+}
 .catalog-item h3 {
   margin: 0;
   margin-bottom: 16px;
@@ -331,6 +351,8 @@ img {
 }
 .catalog-item p {
   margin-right: 20px;
+  margin-bottom: 35px;
+  color: #283136;
 }
 .catalog-inner {
   width: 760px;
@@ -346,15 +368,13 @@ img {
   list-style: none;
   margin-bottom: 60px;
 }
-.catalog-inner .catalog-item {
+.catalog-item-inner {
   width: 360px;
-  /* Временно для сетки */
   min-height: 620px;
-  margin-bottom: 35px;
   margin-right: 40px;
   background-color: transparent;
 }
-.catalog-inner .catalog-item:nth-child(2n) {
+.catalog-item-inner:nth-child(2n) {
   margin-right: 0;
 }
 .catalog-item a {
@@ -409,49 +429,64 @@ img {
   background-color: #e5a722;
   border-top: 1px solid #ce961f;
 }
-.categories ul {
-  list-style: none;
+.sort-categories {
+  display: flex;
+  align-items: center;
 }
-.categories h3 {
+.sort-categories-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+
+}
+.sort-categories h3 {
   font-size: 18px;
   line-height: 18px;
   font-weight: bold;
+  margin-right: auto;
 }
-.categories a {
+.sort-categories a {
+  display: block;
+  padding: 0;
   color: rgba(0,0,0,0.3);
   text-decoration: none;
 }
-.categories-item a:hover,
-.categories-item a:focus {
+.sort-categories-item a:hover,
+.sort-categories-item a:focus {
   color: rgba(0,0,0,0.6);
 }
-.categories-item a:active {
+.sort-categories-item a:active {
   color: #000000;
 }
-.categories-item-current a{
+.sort-categories-item-current a{
   color: #000000;
+}
+.sort-direction {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  position: relative;
+  justify-content: space-between;
+  margin-left: 20px;
+  font-size: 0;
+}
+.sort-direction::before {
+  content: "";
+  position: absolute;
+  width: 11px;
+  height: 11px;
+  background-image: url('../img/icon-down-dir.svg'),
 }
 .filters {
   width: 300px;
-  /* Временно для сетки */
-
 }
-.filter-item {
-  margin: 0;
-  padding: 0;
-  width: 260px;
 
-  border: none;
-}
 .range-filter {
   width: 260px;
   margin-top: 49px;
-}
-.filter-item legend {
-  font-size: 18px;
-  line-height: 24px;
-  text-transform: uppercase;
-  font-weight: 700;
 }
 .range-controls {
   position: relative;
@@ -522,15 +557,85 @@ img {
   text-align: right;
 }
 .filter fieldset {
+  margin: 0;
+  padding: 0;
+  width: 260px;
+  margin-bottom: 45px;
   border: none;
+}
+.filter fieldset:first-child {
+  margin-bottom: 55px;
 }
 .filter legend {
   font-size: 18px;
   line-height: 30px;
+  text-transform: uppercase;
+  font-weight: 700;
+  margin-bottom: 24px;
 }
 .filter ul {
+  padding: 0;
+  margin: 0;
   list-style: none;
   line-height: 20px;
+}
+.filter-option {
+  margin-bottom: 19px;
+  padding-left: 35px;
+}
+.filter-option label {
+  position: relative;
+
+  display: block;
+
+  cursor: pointer;
+  user-select: none;
+}
+.filter-input-radio+label::before {
+  position: absolute;
+  content: "";
+  top: -3px;
+  left: -35px;
+  width: 25px;
+  height: 25px;
+  border: 2px solid #000000;
+  border-radius: 50%;
+
+}
+.filter-input-radio:checked+label::after {
+  content: "";
+
+  position: absolute;
+  width: 25px;
+  height: 25px;
+  left: -33px;
+  top: -1px;
+  background-image: url('../img/radio-on.svg');
+  background-repeat: no-repeat;
+}
+.filter-input-checkbox+label::before {
+  content: "";
+  position: absolute;
+  left: -35px;
+  top: -3px;
+  width: 23px;
+  height: 23px;
+  border: 2px solid #000000;
+
+}
+.filter-input-checkbox:checked+label::after {
+  content: "";
+
+  position: absolute;
+  top: -1px;
+  left: -33px;
+  width: 23px;
+  height: 23px;
+
+
+  background-image: url('../img/checkbox-on.svg');
+  background-repeat: no-repeat;
+  background-position: 0 0;
 }
 .filter-input+label {
   color: #283136;
@@ -545,6 +650,7 @@ img {
   opacity: 0.3;
 }
 .filter-button {
+  padding: 16px 80px;
   text-decoration: none;
   color: #000000;
   background-color: #eeeeee;
@@ -592,6 +698,7 @@ img {
   font-weight: bold;
   padding: 0 15px;
   text-align: center;
+  text-transform: uppercase;
 }
 .about-us h3 {
   font-size: 16px;
@@ -656,6 +763,32 @@ img {
 .catalog-list-inner .catalog-item-image:focus {
   box-shadow: 0 0 10px rgba(0,0,0,0.2);
 }
+.catalog-item-inner {
+  position: relative;
+  padding-top: 40px;
+}
+.catalog-item-inner::before {
+  content: "";
+
+  position: absolute;
+  width: 360px;
+  height: 40px;
+  top:16px;
+  background-image: url('../img/browser.svg');
+  background-repeat: no-repeat;
+  background-position: 0 0;
+}
+.catalog-item-inner::before:hover {
+  opacity: 0.12;
+}
+.info-page {
+position: absolute;
+top: 388px;
+background-color: #eeeeee;
+text-align: center;
+padding: 40px 75px;
+color: #666666;
+}
 .name-site {
   text-decoration: none;
   color: #000000;
@@ -668,6 +801,8 @@ img {
   color: rgba(0,0,0,0.3);
 }
 .info-page .button {
+  width: 50%;
+  padding: 16px 50px;
   color: #ffffff;
   background-color: #fb565a;
 }
@@ -681,29 +816,47 @@ img {
   background-color: #d7373b;
 }
 .pagination-list {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
   margin: 0;
   padding: 0;
+  margin-bottom: 60px;
+  width: 460px;
   list-style: none;
-  /* Временно для сетки */
   min-height: 50px;
   margin-bottom: 6;
   list-style: none;
 }
 .pagination-item a {
+  margin: 0;
+  padding: 20px 25px;
   color: #000000;
   background-color: #eeeeee;
+  align-items: center;
+}
+.pagination-item-word a{
+  margin: 0;
+  padding: 20px 76px;
+  color: #000000;
+  background-color: #eeeeee;
+  align-items: center;
 }
 .pagination-item a:hover,
-.pagination-item a:focus {
+.pagination-item a:focus,
+.pagination-item-word a:hover,
+.pagination-item-word a:hover{
   color: #000000;
   background-color: #dfdfdf;
 }
-.pagination-item a:active {
+.pagination-item a:active,
+.pagination-item-word a:active {
   color: rgba(0,0,0,0.3);
   background-color: #d5d5d5;
   border-top: 1px solid #bfbfbf;
 }
-.pagination-item-current a {
+.pagination-item-current a,
+.pagination-item-word-current a {
   color: #000000;
   background-color: #ffffff;
   border: 1px solid #eeeeee;
@@ -746,11 +899,11 @@ img {
   margin: 0;
   padding: 50px 0;
   padding-left: 45px;
-  padding-right: 60px;
+  padding-right: 40px;
   text-align: left;
 }
 .location-info a{
-  width: 220px;
+  padding: 16px 40px;
 }
 .location p {
   font-size: 16px;
@@ -807,7 +960,6 @@ img {
 }
 .footer-info {
   width: 560px;
-  /* Временно для сетки */
 }
 .popup-write-us fieldset {
   border: none;
@@ -843,30 +995,6 @@ body {
   width: 1440px;
   height: 2476px;
 }
-
-
-
-
-
-
-
-.main-title {
-  margin: 0;
-  padding: 0;
-  margin-bottom: 115px;
-  text-align: center;
-}
-
-
-
-
-
-
-
-
-
-
-
 
 .item-logo {
   width: 210px;
@@ -912,7 +1040,5 @@ body {
 
 .inner-page .footer-info {
   width: 560px;
-  /* Временно для сетки */
-  min-height: 75px;
 }
 <img src="img/map.png" width="1440" height="416"  alt="Адрес офиса на Нердс на ул.Б.Конюшенная,д 19/8 ">
