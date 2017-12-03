@@ -326,7 +326,6 @@ img {
   padding: 0;
   display: flex;
   justify-content: space-between;
-  /* Временно для сетки */
   text-align: left;
   list-style: none;
 }
@@ -510,9 +509,6 @@ img {
   background-repeat: no-repeat;
   opacity: 0.3;
 }
-.catalog-button-down-current {
-  opacity: 1;
-}
 .catalog-button-down::before {
  content: "";
  display: block;
@@ -526,6 +522,9 @@ img {
 .catalog-button-up:focus::before,
 .catalog-button-down:hover::before,
 .catalog-button-down:focus::before {
+  opacity: 1;
+}
+.catalog-button-down-current::before {
   opacity: 1;
 }
 .filters {
@@ -915,19 +914,15 @@ box-sizing: border-box;
   background-size: cover;
 }
 .location-info {
-  text-align: center;
+  text-align: left;
   width: 320px;
   height: 308px;
   margin: 55px 0;
-  padding: 0;
+  padding: 50px 45px 40px;
   background-color: #ffffff;
+  box-sizing: border-box;
 }
-.location-container {
-  margin: 0;
-  padding: 50px 0;
-  padding-left: 45px;
-  padding-right: 40px;
-  text-align: left;
+
 }
 .location-info a{
   padding: 16px 40px;
