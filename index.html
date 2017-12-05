@@ -193,11 +193,10 @@
       <p>Скидка 10% для друзей из социальных сетей</p>
     </div>
   </footer>
-  <section class="popup-write-us">
-    <h3 class="visually-hidden">Напишите нам отзыв</h3>
+
+  <section class="modal modal-write-us">
+    <h2>Напишите нам</h2>
     <form class="letter" method="post" action="https://echo.htmlacademy.ru">
-      <fieldset>
-        <legend>Напишите нам</legend>
         <p class="writer-info">
           <label for="info-name">Ваше имя</label>
           <input id="info-name" type="text" name="name"
@@ -208,15 +207,14 @@
           <input id="info-mail" type="text" name="mail"
           placeholder="Для отправки ответа">
         </p>
-        <p class="writer-info">
+        <p class="writer-info wtiter-info-text">
           <label for="info-text">Текст письма</label>
           <input id="info-text" type="text" name="text"
           placeholder="В свободной форме">
         </p>
-        <button class="modal-close" type="button">x</button>
-      </fieldset>
-      <button type="submit" class="info-button button">Отправить</button>
+        <button type="submit" class="info-button button">Отправить</button>
     </form>
+    <button class="modal-close" type="button">x</button>
   </section>
 </body>
 </html>

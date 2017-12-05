@@ -246,7 +246,7 @@ img {
   padding: 0;
   margin: 0;
   align-items: center;
-
+  min-height: 70px;
   list-style: none;
 }
 .user-navigation {
@@ -768,7 +768,7 @@ img {
 
   position: absolute;
   bottom: 11px;
-  left: -30px;
+  left: -37px;
   width: 25px;
   height: 2px;
   background-color: #fb565a;
@@ -798,11 +798,40 @@ img {
   border-bottom: 1px solid rgba(0,0,0,0.1);
   margin-bottom: 75px;
 }
+.project ul {
+  list-style: none;
+}
 .project-items {
   margin: 0;
   padding: 40px 0;
   display: flex;
   justify-content: space-between;
+}
+.project-items li{
+  position: relative;
+}
+.project-items li::after {
+  content: "";
+
+  position: absolute;
+  bottom: 43px;
+  left: -62px;
+  width: 2px;
+  height: 52px;
+  background-color: rgba(0,0,0,0.1);
+}
+.project-items li:first-child::after {
+  display: none;
+}
+.item-logo {
+  opacity: 0.2;
+}
+.item-logo:hover,
+.item-logo:focus {
+  opacity: 1;
+}
+.item-logo:active {
+  opacity: 0.1;
 }
 
 .info-page {
@@ -893,19 +922,6 @@ box-sizing: border-box;
   background-color: #ffffff;
   border: 1px solid #eeeeee;
 }
-.project ul {
-  list-style: none;
-}
-.item-logo {
-  opacity: 0.2;
-}
-.item-logo:hover,
-.item-logo:focus {
-  opacity: 1;
-}
-.item-logo:active {
-  opacity: 0.1;
-}
 .location {
   min-height: 420px;
   background-image: url(../img/map.png);
@@ -983,33 +999,124 @@ box-sizing: border-box;
 .footer-info {
   width: 560px;
 }
-.popup-write-us fieldset {
+.modal {
+  position: fixed;
+  color: #000000;
+  background-color:#ffffff;
+  box-shadow: 0 30px 50px rgba(0, 0, 0, 0.7);
+}
+.modal-write-us {
+  top:100px;
+  left: 50%;
+  margin-left: -480px;
+  width: 960px;
+  width: 760px;
+  padding-right: 80px;
+  padding-left: 80px;
+  padding-bottom: 85px;
+  padding-top: 45px;
+
+
+}
+.letter {
+
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+
+}
+.letter p {
+  margin: 0;
+  margin-bottom: 45px;
+}
+.writer-info {
+  width: 360px;
+}
+.writer-info:nth-child(3){
+  width: 760px;
+}
+.modal-write-us fieldset {
   border: none;
 }
-.popup-write-us legend {
+.modal-write-us legend {
   font-size: 16px;
   line-height: 18px;
   color: #ffffff bold;
 }
-.popup-write-us input[type="text"] {
+.modal-write-us input[type="text"] {
   font: inherit;
-  color: #ffffff;
-  text-transform: uppercase;
+  color: rgba(0,0,0,0.5);
+  box-sizing: border-box;
+  width: 360px;
+  padding: 10px 15px;
+  padding-right: 40px;
 
   background-color: transparent;
-  border: 2px solid rgba(0,0,0,0.5);
+  border: 2px solid rgba(0,0,0,0.1);
 }
-.popup-write-us input:focus {
+.wtiter-info-text input[type="text"] {
+  font: inherit;
+  color: rgba(0,0,0,0.5);
+  box-sizing: border-box;
+  width: 760px;
+  padding-top: 10px;
+  padding-bottom: 85px;
+  padding-left: 15px;
+
+
+  background-color: transparent;
+  border: 2px solid rgba(0,0,0,0.1);
+}
+.modal-write-us input:hover,
+.modal-write-us input:focus {
+ border-color:rgba(0,0,0,0.3);
+}
+.modal-write-us input:focus {
   border-color: #000000;
 }
-.popup-write-us h3 {
+.modal-write-us h2 {
+  margin: 0;
+  margin-bottom: 42px;
+  font-weight: 700;
   font-size: 45px;
   line-height: 45px;
 }
-.popup-write-us label {
+.modal-write-us label {
   font-size: 16px;
   line-height: 18px;
   font-weight: bold;
+}
+.info-button {
+  margin: 0;
+  padding: 16px 80px;
+}
+.modal-close {
+  position: absolute;
+  top: 67px;
+  right: 72px;
+
+  width: 21px;
+  height: 21px;
+  font-size: 0;
+  background-color: transparent;
+  border: 0;
+  cursor: pointer;
+}
+.modal-close::before,
+.modal-close::after {
+  content: "";
+  position: absolute;
+  width: 21px;
+  height: 3px;
+  top: 9px;
+  left: 0px;
+  background-color: #fb565a;
+}
+.modal-close::before {
+  transform: rotate(45deg);
+}
+.modal-close::after {
+  transform: rotate(-45deg);
 }
 / *----- Сеточные стили ----- */
 html,
