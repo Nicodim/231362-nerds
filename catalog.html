@@ -37,7 +37,7 @@
         <h2 class="visually-hidden">Фильтр товаров</h2>
         <form class="filter" method="get" action="https//:echo.htmlacademy.ru">
           <fieldset class="filter-item">
-            <legend>Стоимость:</legend>
+            <legend class="price-filter">Стоимость:</legend>
             <div class="range-filter">
               <div class="range-controls">
                 <div class="scale">
@@ -229,13 +229,14 @@
   <section class="location">
     <div class="container">
       <div class="location-info">
-          <h3>NERDS DESIGN STUDIO</h3>
-          <p>191186,Санкт-петербург<br>
-            ул.Б.Конюшенная,д 19/8<br>
-            <br>
-            тел.+7(812)275-75-75
-          </p>
-          <a class="button" href="#">Напишите нам</a>
+        <h3>NERDS DESIGN STUDIO</h3>
+        <p>191186, Санкт-Петербург,
+          ул. Б. Конюшенная, д. 19/8a
+        </p>
+        <p>
+          тел.+7(812)275-75-75
+        </p>
+        <a class="button button-modal-inner" href="#">Напишите нам</a>
       </div>
     </div>
   </section>
@@ -261,30 +262,29 @@
       <p>Скидка 10% для друзей из социальных сетей</p>
     </div>
   </footer>
-  <section class="popup-write-us">
-    <h3 class="visually-hidden">Напишите нам отзыв</h3>
+
+  <section class="modal modal-write-us">
+    <h2>Напишите нам</h2>
     <form class="letter" method="post" action="https://echo.htmlacademy.ru">
-      <fieldset>
-        <legend>Напишите нам</legend>
-        <p class="writer-info">
-          <label for="info-name">Ваше имя</label>
-          <input id="info-name" type="text" name="name"
-          placeholder="Представьтесь,пожалуйста">
-        </p>
-        <p>
-          <label for="info-mail">Ваш e-mail</label>
-          <input id="info-mail" type="text" name="mail"
-          placeholder="Для отправки ответа">
-        </p>
-        <p>
-          <label for="info-text">Текст письма</label>
-          <input id="info-text" type="text" name="text"
-          placeholder="В свободной форме">
-        </p>
-        <button class="modal-close" type="button">Закрыть</button>
-      </fieldset>
+      <p class="writer-info">
+        <label for="info-name">Ваше имя</label>
+        <input id="info-name" type="text" name="name"
+        placeholder="Представьтесь,пожалуйста">
+      </p>
+      <p class="writer-info">
+        <label for="info-mail">Ваш e-mail</label>
+        <input id="info-mail" type="text" name="mail"
+        placeholder="Для отправки ответа">
+      </p>
+      <p class="writer-info wtiter-info-text">
+        <label for="info-text">Текст письма</label>
+        <input id="info-text" type="text" name="text"
+        placeholder="В свободной форме">
+      </p>
       <button type="submit" class="info-button button">Отправить</button>
     </form>
+    <button class="modal-close" type="button">x</button>
   </section>
 
 </body>
+</html>
