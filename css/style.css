@@ -13,7 +13,7 @@ body {
 }
 .container {
   width: 1200px;
-  margin: 0 auto;
+  margin: 0 121px;
   padding: 0 20px;
   box-sizing: border-box;
 }
@@ -50,7 +50,7 @@ img {
   width: 160px;
   height: 65px;
   padding: 0;
-  /* Временно для сетки */
+
 }
 .inner-page .link {
   order: 0;
@@ -92,7 +92,7 @@ img {
   padding-top: 48px;
 }
 .inner-page .main-header {
-  padding-bottom: 110px;
+  padding-bottom: 109px;
   margin-bottom: 38px;
 }
 .slider {
@@ -136,7 +136,7 @@ img {
 
   text-align: center;
   font-size: 0;
-  transform: translateX(-50%);
+  transform: translateX(-22%);
 }
 .slider-controls i {
   position: relative;
@@ -223,7 +223,7 @@ img {
   margin: 0;
   padding: 0;
   margin-top: 79px;
-  margin-right: 2px;
+  margin-left: 91px;
   text-align: center;
 }
 .main-navigation .container {
@@ -252,7 +252,7 @@ img {
 }
 .site-navigation li {
   line-height: 1;
-  margin-top: -6px;
+  margin-bottom: 6px;
   display: flex;
   align-items: center;
 }
@@ -288,8 +288,7 @@ img {
   color: #000000;
   position: relative;
 }
-.site-navigation-current a::before,
-.user-navigation-current a::before {
+.site-navigation-current a::before {
   content: "";
 
   position: absolute;
@@ -298,10 +297,21 @@ img {
   top: 26px;
   background-color: #fb565a;
 }
+.user-navigation-current a::after {
+  content: "";
+  position: absolute;
+  width: 114px;
+  height: 2px;
+  top: 37px;
+  left: 11px;
+  background-color: #fb565a;
+}
 
 .user-navigation .basket-link {
   position: relative;
-  padding-left: 50px;
+  padding-left: 3px;
+  width: 122px;
+  text-align: right;
 }
 .basket-link::before {
   content: "";
@@ -358,7 +368,7 @@ img {
   width: 300px;
   text-align: left;
   margin-right: 60px;
-  margin-top: 10px;
+  margin-top: 9px;
 }
 .catalog-item-inner {
   width: 360px;
@@ -418,7 +428,9 @@ img {
 .img-link:active {
   color: rgba(0,0,0,0.3);
 }
-
+.catalog-text {
+  padding-right: 16px;
+}
 .catalog-item-inner {
   position: relative;
   border: 1px solid rgba(0,0,0,0.1);
@@ -495,7 +507,7 @@ img {
   margin-right: 9px;
   font-size: 14px;
   margin-top: 4px;
-  padding-left: 15px;
+  padding-left: 16px;
   line-height: 20px;
 }
 .sort-categories h3 {
@@ -760,7 +772,7 @@ img {
   list-style: none;
   display: flex;
   justify-content: space-between;
-  padding-top: 35px;
+  padding-top: 39px;
   margin-bottom: 50px;
   border-top: 1px solid rgba(0,0,0,0.1);
 }
@@ -769,10 +781,10 @@ img {
 }
 .about-logo {
   width: 360px;
-  margin-top: 6px;
+  margin-top: 3px;
 }
 .about p {
-  margin: 37px 0;
+  margin: 36px 0;
 }
 .about b {
   font-size: 45px;
@@ -987,6 +999,10 @@ img {
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
+
+}
+.location .container {
+  display: flex;
 }
 .location-info {
   text-align: left;
@@ -1098,6 +1114,45 @@ img {
   background-color: #d7373b;
   fill: rgba(255, 255, 255, 0.3);
 }
+@keyframes bounce {
+  0% {
+    transform: translateY(2000px);
+  }
+
+  70% {
+    transform: translateY(20px);
+  }
+
+  90% {
+    transform: translateY(-10px);
+  }
+
+  100% {
+    transform: translateY(0);
+  }
+}
+@keyframes shake {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+
+  10%,
+  30%,
+  50%,
+  70%,
+  90% {
+    transform: translateY(-10px);
+  }
+
+  20%,
+  40%,
+  60%,
+  80% {
+    transform: translateY(10px);
+  }
+}
+
 .modal {
   display: none;
   position: fixed;
@@ -1105,6 +1160,11 @@ img {
   background-color:#ffffff;
   box-shadow: 0 30px 50px rgba(0, 0, 0, 0.7);
 }
+.modal-show {
+  display: block;
+  animation: bounce 0.6s;
+}
+
 .modal-write-us {
   top:100px;
   left: 50%;
@@ -1116,8 +1176,8 @@ img {
   padding-bottom: 85px;
   padding-top: 70px;
 
-
 }
+
 .letter {
 
   display: flex;
@@ -1177,7 +1237,12 @@ img {
   border-color:rgba(0,0,0,0.3);
 }
 .modal-write-us input:focus {
+  color: #444444;
   border-color: #000000;
+}
+.modal-write-us input:invalid {
+  border-color:#e74246;
+  color: #e74246;
 }
 .modal-write-us h2 {
   margin: 0;
@@ -1235,13 +1300,3 @@ img {
 .modal-close:focus::after {
   opacity: 0.1;
 }
-html,
-body {
-  width: 1440px;
-  height: 2476px;
-}
-.location .container {
-  display: flex;
-}
-
-<img src="img/map.png" width="1440" height="416"  alt="Адрес офиса на Нердс на ул.Б.Конюшенная,д 19/8 ">
