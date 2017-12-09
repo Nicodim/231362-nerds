@@ -390,13 +390,13 @@ img {
 }
 .catalog-item-inner {
   width: 359px;
-  height: 575px;
+  height: 613px;
   margin-right: 40px;
   background-color: transparent;
   position: relative;
   border: 1px solid rgba(0,0,0,0.1);
   border-radius: 5px;
-  margin-bottom: 72px;
+  margin-bottom: 34px;
 }
 .catalog-item-inner:hover,
 .catalog-item-inner:focus {
