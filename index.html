@@ -63,42 +63,30 @@
       <ul class="catalog-list">
         <li class="catalog-item">
           <a class="img-link" href="catalog-items.html">
-            <p>
               <img src="img/illustration-1.png" width="300" height="146" alt="Веб-сайты">
-            </p>
             <h3>Веб-сайты</h3>
           </a>
           <p class="catalog-text">Мир никогда не будет прежним после того как увидит ваш сайт!
           </p>
-          <p class="cite-items">
             <a class="button-1 button" href="#">Заказать</a>
-          </p>
         </li>
         <li class="catalog-item">
           <a class="img-link" href="catalog-items.html">
-            <p>
               <img src="img/illustration-2.png" width="300" height="146" alt="Приложения">
-            </p>
             <h3>Приложения</h3>
           </a>
           <p class="catalog-text">Покорите топ-10 приложений в AppStore и Google Play
           </p>
-          <p class="cite-items">
             <a class="button-2 button" href="#">Заказать</a>
-          </p>
         </li>
         <li class="catalog-item">
           <a class="img-link" href="catalog-items.html">
-            <p>
               <img src="img/illustration-3.png" width="300" height="146" alt="Презентации">
-            </p>
             <h3>Презентации</h3>
           </a>
           <p class="catalog-text">Вы даже не подозреваете,
              насколько вы изумительны!</p>
-          <p class="cite-items">
             <a class="button-3 button" href="#">Заказать</a>
-          </p>
         </li>
       </ul>
     </section>
@@ -162,12 +150,8 @@
     <div class="container">
       <div class="location-info">
         <h3>NЁRDS DESIGN STUDIO</h3>
-        <p>191186,Санкт-петербург
-          ул.Б.Конюшенная,д 19/8
-        </p>
-        <p>
-          тел. +7 (812) 275-75-75
-        </p>
+        <p>191186,Санкт-петербург ул.Б.Конюшенная,д 19/8</p>
+        <p>тел. +7 (812) 275-75-75</p>
         <a class="button button-modal" href="#">Напишите нам</a>
       </div>
     </div>
@@ -228,6 +212,17 @@
        evt.preventDefault();
        popup.classList.add("modal-show");
     });
+     close.addEventListener("click", function (evt) {
+       evt.preventDefault();
+       popup.classList.remove("modal-show");
+    });
+    window.addEventListener("keydown", function (evt) {
+    if (evt.keyCode === 27) {
+      if (popup.classList.contains("modal-show")) {
+        popup.classList.remove("modal-show");
+      }
+    }
+  });
 </script>
 </body>
 </html>
