@@ -243,6 +243,7 @@ img {
   display: flex;
   flex-wrap: wrap;
   width: 440px;
+  min-height: 43px;
   justify-content: space-between;
   padding: 0;
   margin: 0;
@@ -880,14 +881,11 @@ img {
 .info-page {
   display: none;
   position: absolute;
-  top: 384px;
+  bottom: 0px;
   background-color: #eeeeee;
   text-align: center;
   width: 100%;
-  padding-left: 65px;
-  padding-bottom: 45px;
-  padding-right: 65px;
-  padding-top: 29px;
+  padding: 15px 62px 40px;
   color: #666666;
   box-sizing: border-box;
 
@@ -897,6 +895,8 @@ img {
   display:block;
 }
 .info-page b {
+  font-size: 18px;
+  line-height: 30px;
   margin: 0;
   padding:0;
 }
@@ -910,22 +910,21 @@ img {
   padding-top: 6px;
   margin-left: 0;
 }
-.name-site {
+.info-page a {
   font-size: 18px;
   line-height: 30px;
   text-decoration: none;
   color: #000000;
 }
-.name-site:hover,
-.name-site:focus {
+.info-page a:hover,
+.info-page a:focus {
   color: #fb565a;
 }
-.name-site:active {
+.info-page a:active {
   color: rgba(0,0,0,0.3);
 }
 .info-page .button {
-  width: 50%;
-  padding: 15px 43px;
+  padding: 10px 55px;
   margin-top: 20px;
   color: #ffffff;
   background-color: #fb565a;
