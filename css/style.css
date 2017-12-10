@@ -890,7 +890,7 @@ img {
 }
 .info-page p {
   font-size: 16px;
-  line-height: 18px;
+  line-height: 19px;
   margin: 0;
   margin-bottom: 12px;
   padding: 0;
@@ -909,7 +909,9 @@ img {
   color: rgba(0,0,0,0.3);
 }
 .info-page .button {
-  padding: 10px 55px;
+  font-size: 16px;
+  line-height: 18px;
+  padding: 16px 60px;
   margin-top: 20px;
   color: #ffffff;
   background-color: #fb565a;
