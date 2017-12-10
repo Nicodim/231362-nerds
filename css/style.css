@@ -317,7 +317,7 @@ img {
   min-height: 1720px;
   margin: 0;
   padding: 0;
-  margin-bottom: 35px;
+  margin-bottom: 61px;
   list-style: none;
 }
 .catalog-list {
@@ -891,12 +891,9 @@ img {
   justify-content: space-between;
   margin: 0;
   padding: 0;
-  margin-bottom: 58px;
-  width: 447px;
+  max-width: 447px;
   list-style: none;
-  min-height: 50px;
   margin-bottom: 6;
-  list-style: none;
 }
 .pagination-item .pagination-button {
   margin: 0;
@@ -962,7 +959,7 @@ img {
 .location p {
   font-size: 16px;
   line-height: 18px;
-  margin-bottom: 16px;
+  margin-bottom: 18px;
 }
 .button-modal {
   margin-top: 20px;
@@ -978,7 +975,7 @@ img {
   line-height: 30px;
   font-weight: bold;
   margin: 0;
-  margin-bottom: 26px;
+  margin-bottom: 23px;
 }
 .main-footer {
   margin-top: 50px;
@@ -990,7 +987,7 @@ img {
   background: none;
 }
 .inner-page .main-footer {
-  margin-top: 34px;
+  margin-top: 31px;
   padding: 38px 0px;
   padding-bottom: 75px;
   margin-left: 95px;
