@@ -835,7 +835,7 @@ img {
   list-style: none;
   align-items: center;
 }
-.project-items li{
+.project-items li {
   width: 260px;
   height: 193px;
   position: relative;
@@ -945,10 +945,10 @@ img {
   background-color: #eeeeee;
   align-items: center;
 }
-.pagination-item-word .pagination-button{
+.pagination-item-word .pagination-button {
   margin: 0;
   margin-right: 4px;
-  padding: 18px 77px;
+  padding: 15px 77px;
   color: #000000;
   background-color: #eeeeee;
   align-items: center;
@@ -956,7 +956,7 @@ img {
 .pagination-item .pagination-button:hover,
 .pagination-item .pagination-button:focus,
 .pagination-item-word .pagination-button:hover,
-.pagination-item-word .pagination-button:hover{
+.pagination-item-word .pagination-button:hover {
   color: #000000;
   background-color: #dfdfdf;
 }
@@ -970,13 +970,13 @@ img {
 .pagination-item-word-current .pagination-button {
   color: #000000;
   background-color: #ffffff;
-  border: 0.2px solid #eeeeee;
+  border: 1px solid #eeeeee;
 }
 .pagination-item-current .pagination-button:hover,
 .pagination-item-current .pagination-button:focus {
   color: #000000;
   background-color: #ffffff;
-  border: 0.2px solid #eeeeee;
+  border: 1px solid #eeeeee;
 }
 .location {
   background-image: url(../img/map.png);
@@ -997,9 +997,8 @@ img {
   background-color: #ffffff;
   box-sizing: border-box;
 }
-.location-info a{
+.location-info a {
   padding: 16px 40px;
-
 }
 .location p {
   font-size: 16px;
@@ -1066,7 +1065,6 @@ img {
   width: 260px;
   height: 80px;
 }
-
 .inner-page .footer-info {
   width: 560px;
 }
@@ -1146,6 +1144,9 @@ img {
   display: block;
   animation: bounce 0.6s;
 }
+.modal-error {
+  animation: shake 0.6s;
+}
 .modal-write-us {
   top:100px;
   left: 50%;
@@ -1156,14 +1157,11 @@ img {
   padding-left: 98px;
   padding-bottom: 85px;
   padding-top: 70px;
-
 }
 .letter {
-
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-
 }
 .letter p {
   margin: 0;
